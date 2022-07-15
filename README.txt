@@ -3,13 +3,47 @@ Los datos en "distritos.php" y "cantones.php" están desactualizados y deben ser
 Su tarea es crear un script en php para leer el archivo "zonas.csv" y convertirlo en arreglos manteniendo el formato que está 
 en los archivos distritos.php y cantones.php.
 
+Ej:
+
+/********************************************/
+
+Si tengo el archivo Data.csv:
+
+Color, Azul
+Color, Rojo
+Color, Amarillo
+Talla, S
+Talla, M
+Talla, L
+
+//////////////////////////////////
+
+Creo un archivo "ejemplo.php" con el contenido:
+
+<?php
+//script php
+function customCsvToArray($nombreArchivo){
+    $arreglo = [];
+    //lógica para leer el archivo crear el arreglo
+    echo json_encode($arreglo, JSON_PRETTY_PRINT);
+}
+customCsvToArray("Data.csv");
+
+//////////////////////////////////
+
+El resultado de ejecutar en consola el comando:
+
+php ejemplo.php 
+
+debería imprimir los contenidos de "Data.csv".
+
+/********************************************/
+
 Existen muchas formas de leer archivos csv usando php, tal como:
 https://www.php.net/manual/en/function.fgetcsv.php
 
-
 No es necesario agregar tíldes ni convertir a minúscula/mayúscula los datos.
 Para efectos de encoding, todo está (y debe quedar) en utf-8
-
 
 Los entregables para esta tarea son:
 
