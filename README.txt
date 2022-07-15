@@ -17,8 +17,23 @@ Los entregables para esta tarea son:
 - "cantones2.php": debe ser igual que "cantones.php" pero con los datos actualizados
 - "<nombre>Zonas.php": script ejecutable para convertir crear lo arreglos con los datos de "zonas.csv"
 
-Para entregar estos archivos, deben crear un branch con su nombre, agregar sus archivos, hacer un commit y un push a este repositorio
-https://github.com/cliddell97/ZonasCR/
+Para entregar estos archivos, deben crear un branch con su nombre, agregar sus archivos, hacer un commit y un push al repositorio.
+
+Usen los siguientes comandos como guía (en el servidor de desarrollo (conectarse por WinSCP), abran una terminal de putty):
+
+cd ~/tareas/<Nombre>
+ls
+cd <Nombre>
+git clone https://github.com/cliddell97/ZonasCR.git
+cd ZonasCR
+git checkout -b <Nombre>
+
+//REALIZAR EL TRABAJO AQUÍ
+//CUANDO HAYAN TERMINADO, SIGAN CON:
+
+git add .
+git commit -m "entrega <Nombre>"
+git push origin <Nombre>
 
 
 Los objetivos que se van a medir en esta tarea son:
