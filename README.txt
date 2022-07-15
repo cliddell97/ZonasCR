@@ -17,6 +17,9 @@ Los entregables para esta tarea son:
 - "cantones2.php": debe ser igual que "cantones.php" pero con los datos actualizados
 - "<nombre>Zonas.php": script ejecutable para convertir crear lo arreglos con los datos de "zonas.csv"
 
+Para entregar estos archivos, deben crear un branch con su nombre, agregar sus archivos, hacer un commit y un push a este repositorio
+https://github.com/cliddell97/ZonasCR/
+
 
 Los objetivos que se van a medir en esta tarea son:
 
