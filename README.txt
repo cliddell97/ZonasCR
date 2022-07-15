@@ -41,8 +41,9 @@ Los objetivos que se van a medir en esta tarea son:
 - Manejo básico de PHP
 - Manipulación de csv
 - Procesamiento de texto
-- Legibilidad de código
+- Calidad de código
 - Uso básico de Git/GitHub
+- Colaboración en equipo
 
 Aquí dejo las definiciones de los id de las provincias:
 
