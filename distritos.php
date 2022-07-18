@@ -1,4 +1,5 @@
 <?php
+$test = "hola";
             $options = [                
 				['value' => '', 'label' => 'Seleccione distrito'],
                 ['value' => 'Carmen', 'city' => 'San José', 'label' => 'Carmen'],
