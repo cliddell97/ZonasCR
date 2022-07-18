@@ -76,5 +76,45 @@
     // print_r($csv);
     // echo '</pre>';
 
+    function searchId($nombre){
+        $codigo = 0;
+        strtoupper($nombre);
     
+        switch($nombre){
+            case "SAN JOSE":
+                $codigo = 609;
+            break;
+    
+            case "ALAJUELA":
+                $codigo = 610;
+            break;
+    
+            case "CARTAGO":
+                $codigo = 611;
+            break;
+    
+            case "HEREDIA":
+                $codigo = 612;
+            break;
+    
+            case "GUANACASTE":
+                $codigo = 613;
+            break;
+    
+            case "PUNTARENAS":
+                $codigo = 614;
+            break;
+    
+            case "LIMON":
+                $codigo = 615;
+            break;
+        }
+    
+        return $codigo;
+    
+    }
+    
+    function csvToArray(){
+
+    }
 ?>
