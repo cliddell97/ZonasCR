@@ -1,5 +1,6 @@
 
 <?php
+
     //Leer data del archivo zonas.csv
     // $csv_file_name = 
     // $handle = fopen('zonas.csv','a');
