@@ -113,8 +113,36 @@
         return $codigo;
     
     }
-    
-    function csvToArray(){
 
-    }
+    function csvToArray($fileName){
+        $Coptions = "";
+        $Doptions = "";
+        $firstRow = true;
+    
+        if(($handle = fopen($fileName, 'r')) !== FALSE){
+            $Cpasado ="";
+            while(! feof($handle)){
+            $fp = fgetcsv($handle, 1000, "\n");
+            if(!empty($fp) && !$firstRow){
+    
+                foreach($fp as $field){
+                    $values = explode(',', $field);
+                    if( $Cpasado != $values[1]){
+                        $Coptions .= '[value'.'=> '.$values[1]. ', ' .'region_id => '.searchId($values[0]). ','. ' label => '.$values[1].'],' . "\n";
+                        $Cpasado = $values[1];
+                    }
+                    $Doptions .= '[value'.'=> '.$values[2]. ', '.'city => '.$values[1].', ' .' label => '.$values[2].']' . "\n";
+                }
+            }
+            $firstRow = false;
+        }
+        file_put_contents('cantonesUpdate.php', print_r($Coptions, true));
+        file_put_contents('distritosUpdate.php', print_r($Doptions, true));
+        }
+    }  
+
+    
+
+
+    csvToArray('zonas.csv');
 ?>
